@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body{
+    margin-left: 15%;
+    margin-right: 15%;
+    font-family: "Roboto";
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    margin-left: -20px;
+    display: flex;
+    align-items: center;
+}
+.logo svg{
+    margin-left: 20px;
+}
+
+
+
+.navbar nav{
+    display: flex;
+    align-items:center ;
+    justify-content: space-around;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+}
+nav li{
+    float: left;
+    padding-right:30px;
+}
+
+.navbar{
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1288px){
+    .nav-itemx{
+        visibility: visible;
+    }
+    .nav-list{
+        display: none;
+    }
+    .logo{
+        float:left;
+    }
+}
+@media screen and (min-width: 1288px){
+    .nav-itemx{
+        visibility: hidden;
+    }
+    nav{
+        display: flex;
+        align-items:center ;
+        justify-content: space-between;
+    }
+}
+
+.landing-sect{
+    margin-top: 50px;
+}
+
+.landing-sect .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.land-text{
+    width:545px;
+    margin-bottom: 10px;
+    padding-top: 40px;
+}
+.land-image{
+    padding-top: 30px;
+}
+.land-text h1{
+    font-size:35px;
+    margin:0px;
+    line-height: 45px;
+}
+
+.land-button,.desc{
+    margin-top: 15px;
+}
+
+.desc p{
+    font-size: 20px;
+}
+
+.welcome-sect .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.welc-text{
+    width: 520px;
+    margin-bottom: 10px;
+    padding-top: 70px;
+    font-size: 18px;
+}
+.welc-text .desc{
+    line-height: 25px;
+}
+
+.blocks{
+    width: 363px;
+    height: 360px;
+    line-height: 25px;
+}
+.product-sect {
+    margin-top: 100px;
+}
+
+
+.product-sect .item-blocks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.item-blocks p{
+    font-size: 18px;
+}
+.product-sect .sect-head{
+    width:max-content;
+    margin:auto;
+    
+}
+.product-sect .sect-head h1{
+    font-size: 30px;
+}
+
+.footer .item-blocks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.footer .blocks{
+    width: 363px;
+    height:200px;
+
+}
+.footer{
+    margin-top: 100px;
+}
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    width:max-content;
+    font-size: 25px;
+    color: white;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size:20px;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  @media screen and (max-height:450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  @media screen and (max-width:1559px) {
+    .product-sect .item-blocks{
+        display: block;
+        text-align: center;
+    }
+    .product-sect .blocks{
+        margin:auto;
+    }
+    .footer .item-blocks{
+        display: block;
+        text-align: center;
+    }
+    .footer .blocks{
+        margin:auto;
+    }
+  }
+
+  @media screen and (max-width:500px) {
+      .product-sect .blocks{
+          width:300px ;
+          height:auto;
+      }
+      .footer .blocks{
+          width:300px;
+          height:auto;
+
+      }
+
+      .product-sect .sect-head h1{
+        font-size: 25px;
+    }
+  }
+  @media  screen and (max-width:420px) {
+    .product-sect .blocks{
+        width:200px ;
+        margin-top: 20px;
+    }
+    .footer .blocks{
+        width:220px;
+        margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (min-width:500px) and (max-width:600px){
+      .brands{  
+          width:350px;
+      }
+  }
+  @media screen and (max-width:500px) {
+      .brands{
+          width:300px;
+      }
+  }
+  @media screen and (max-width:420px) {
+    .brands{
+        width:200px;
+    }
+}
+@media screen and (max-width:570px) {
+    .land-image svg{
+        width:345px;
+        height:340px;
+    }
+    .welc-image svg{
+        width:345px;
+        height:340px;
+    }
+}
